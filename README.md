@@ -266,6 +266,6 @@ uv run pytest --cov
 uv run ruff check .
 ```
 
-The lookups are passed in (dependency injection), so most tests use fake lookups instead of the real database. The end-to-end tests run on `apache_log.txt` and the database in `geolite2/`. To run them on other files, set `LOGSTATS_E2E_LOG` and `LOGSTATS_E2E_DB`.
+The lookups are passed in (dependency injection), so most tests use fake lookups instead of the real database. The end-to-end tests run on `apache_log.txt` and the database in `geolite2/`.
 
 `--cov` adds a coverage report. It includes the CLI tests, which run `logstats` in a separate process.
