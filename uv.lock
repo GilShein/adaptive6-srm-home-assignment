@@ -216,6 +216,7 @@ version = "0.1.0"
 source = { editable = "." }
 dependencies = [
     { name = "geoip2" },
+    { name = "maxminddb" },
     { name = "ua-parser" },
     { name = "ua-parser-builtins" },
 ]
@@ -229,6 +230,7 @@ dev = [
 [package.metadata]
 requires-dist = [
     { name = "geoip2", specifier = "==5.3.0" },
+    { name = "maxminddb", specifier = "==3.2.0" },
     { name = "ua-parser", specifier = "==1.0.2" },
     { name = "ua-parser-builtins", specifier = "==202610" },
 ]

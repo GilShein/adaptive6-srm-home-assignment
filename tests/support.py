@@ -9,6 +9,7 @@ CHROME_ON_MAC_LINE = (
     '200 203023 "http://semicomplete.com/presentations/logstash-monitorama-2013/" '
     '"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.77 Safari/537.36"\n'
 )
+UK_CHROME_ON_MAC_LINE = CHROME_ON_MAC_LINE.replace("83.149.9.216", "81.2.69.160")
 DASH_AGENT_LINE = '200.49.190.101 - - [17/May/2015:10:05:36 +0000] "GET /reset.css HTTP/1.1" 200 1015 "-" "-"\n'
 FIREFOX_ON_UBUNTU_LINE = (
     '24.236.252.67 - - [17/May/2015:10:05:40 +0000] "GET /favicon.ico HTTP/1.1" 200 3638 "-" '

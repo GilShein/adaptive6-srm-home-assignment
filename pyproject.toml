@@ -5,9 +5,13 @@ description = "Statistical report of the percentage of requests per Country, OS 
 requires-python = ">=3.13,<3.14"
 dependencies = [
     "geoip2==5.3.0",
+    "maxminddb==3.2.0",
     "ua-parser==1.0.2",
     "ua-parser-builtins==202610",
 ]
+
+[project.scripts]
+logstats = "logstats.cli:main"
 
 [dependency-groups]
 dev = [
