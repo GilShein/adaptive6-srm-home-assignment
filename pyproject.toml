@@ -16,6 +16,7 @@ logstats = "logstats.cli:main"
 [dependency-groups]
 dev = [
     "pytest==9.1.1",
+    "pytest-cov==7.1.0",
     "ruff==0.17.1",
 ]
 
@@ -29,3 +30,7 @@ extend-select = ["ANN"]
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 pythonpath = ["tests"]
+
+[tool.coverage.run]
+source = ["logstats"]
+patch = ["subprocess"]
