@@ -1,0 +1,18 @@
+[project]
+name = "logstats"
+version = "0.1.0"
+description = "Statistical report of the percentage of requests per Country, OS and Browser in an Apache web server log file"
+requires-python = ">=3.13,<3.14"
+dependencies = []
+
+[dependency-groups]
+dev = [
+    "ruff==0.17.1",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.ruff.lint]
+extend-select = ["ANN"]
