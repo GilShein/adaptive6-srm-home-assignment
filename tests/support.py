@@ -1,4 +1,8 @@
+from pathlib import Path
+
 from logstats.dimensions import UNKNOWN, Agent, Dimension, default_dimensions
+
+TEST_DB = Path(__file__).parent / "data" / "GeoLite2-Country-Test.mmdb"
 
 CHROME_ON_MAC_LINE = (
     '83.149.9.216 - - [17/May/2015:10:05:03 +0000] "GET /presentations/logstash-monitorama-2013/images/kibana-search.png HTTP/1.1" '
